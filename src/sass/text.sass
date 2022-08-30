@@ -1,0 +1,43 @@
+[data-text]
+    color: #fff
+    transition: 1s
+    height: max-content
+    .div
+        height: 100vh
+
+    [data-over]
+        z-index: 10
+
+    h1
+        font-size: 60px
+
+    [data-right]
+        transition: 1s
+        background: #fff
+        .center
+            right: 0
+            height: 100vh
+            position: absolute
+
+        [data-blur]
+            filter: blur(0px)
+
+        p
+            transition: .5s
+            color: #ffffff00
+
+    [data-right='over']
+        width: 1vw
+        border-radius: 25vh 0 0 25vh
+
+        [data-blur]
+            filter: blur(4px)
+
+        p
+            color: #ffffff
+            z-index: 10
+
+[data-text='over']
+    [data-blur]
+        filter: blur(0px)
+
